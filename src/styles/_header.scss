@@ -1,0 +1,52 @@
+.header-container {
+	.bg-overlay {
+		z-index: -1;
+
+		&.active {
+			height: 200%;
+		}
+	}
+
+	.header-form-container {
+		.form-links {
+			p {
+				position: relative;
+				transition: all 0.2s;
+				cursor: pointer;
+
+				&.link-1 {
+					&.active {
+						&::after {
+							content: "";
+							position: absolute;
+							width: 30px;
+							height: 2px;
+							border: 20px;
+							background-color: #fff;
+							bottom: -5px;
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+				}
+
+				&.link-2,
+				&.link-3 {
+					&:hover {
+						&::after {
+							content: "";
+							position: absolute;
+							width: 20px;
+							height: 2px;
+							border: 20px;
+							background-color: #fff;
+							bottom: -5px;
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
