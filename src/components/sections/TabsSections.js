@@ -39,7 +39,7 @@ const TabsSections = () => {
 								{places.map((place, idx) => (
 									<div key={idx} className="text-sm mb-4">
 										<h5 className="font-medium mb-1">{place.city}</h5>
-										<p>{place.state}</p>
+										<p className="text-gray-600">{place.state}</p>
 									</div>
 								))}
 							</div>

@@ -10,16 +10,14 @@ import TabsSections from "../components/sections/TabsSections";
 
 export default function Home() {
 	return (
-		<div className="">
+		<div>
 			<SEO />
-			<Header />
 			<HeroSection />
 			<LocationSection />
 			<AnywhereSection />
 			<ExperienceSection />
 			<HostSection />
 			<TabsSections />
-			<Footer />
 		</div>
 	);
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaAirbnb } from "react-icons/fa";
+import Link from "next/link";
 import { AiOutlineGlobal, AiOutlineSearch } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -32,15 +33,16 @@ const Header = () => {
 				}
                 ${formActive ? "active" : ""}`}
 			></div>
-			<a
-				href="#"
-				className={`header-logo flex items-end ${
-					activeHeader ? "text-red-400" : "text-white"
-				}`}
-			>
-				<FaAirbnb className="text-4xl mr-2" />{" "}
-				<span className="text-2xl font-semibold hidden lg:block">airbnb</span>
-			</a>
+			<Link href="/">
+				<a
+					className={`header-logo flex items-end ${
+						activeHeader ? "text-red-400" : "text-black"
+					}`}
+				>
+					<FaAirbnb className="text-4xl mr-2" />{" "}
+					<span className="text-2xl font-semibold hidden lg:block">airbnb</span>
+				</a>
+			</Link>
 			{/* <div
 				onClick={() => setFormActive(!formActive)}
 				className={`header-form-container transition-transform duration-200 absolute left-2/4 transform-gpu -translate-x-2/4 top-28 md:top-28 lg:top-20 font-sans flex flex-col items-center ${
