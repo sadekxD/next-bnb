@@ -167,16 +167,16 @@ const detail = () => {
 				<h1 className="text-xl font-medium mb-2 text-gray-900">Location</h1>
 				<p className="mb-4">Jersey City, New Jersey, United States</p>
 
-				<div class="mapouter">
-					<div class="gmap_canvas">
+				<div className="mapouter">
+					<div className="gmap_canvas">
 						<iframe
 							height="500"
 							id="gmap_canvas"
 							src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=k&z=7&ie=UTF8&iwloc=&output=embed"
-							frameborder="0"
+							frameBorder="0"
 							scrolling="no"
-							marginheight="0"
-							marginwidth="0"
+							marginHeight="0"
+							marginWidth="0"
 							className="w-full"
 						></iframe>
 						<a href="https://getasearch.com/fmovies"></a>
