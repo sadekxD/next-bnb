@@ -187,7 +187,6 @@ const detail = () => {
 									position: relative;
 									text-align: right;
 									height: 500px;
-									width: 600px;
 								}
 							`}
 						</style>
@@ -200,7 +199,6 @@ const detail = () => {
 									overflow: hidden;
 									background: none !important;
 									height: 500px;
-									width: 600px;
 								}
 							`}
 						</style>
